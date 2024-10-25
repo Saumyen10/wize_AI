@@ -1,28 +1,37 @@
-Web Scraping, Data Cleaning, and Topic Classification Pipeline:
+                                                                𝐖𝐞𝐛 𝐒𝐜𝐫𝐚𝐩𝐢𝐧𝐠, 𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐚𝐧𝐝 𝐓𝐨𝐩𝐢𝐜 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐏𝐢𝐩𝐞𝐥𝐢𝐧𝐞:
 
-Project Overview:
+𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰:
 This project implements a pipeline to scrape articles by a specific author, clean the data, and classify topics using Natural Language Processing (NLP). The pipeline processes articles for a well-organized dataset structured around key themes.
 
-Features--->
+𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬--->
 
 Web Scraping: Extracts articles written by a specific author across multiple pages, handling pagination and dynamic loading.
+
 Data Cleaning: Processes and cleans text to remove irrelevant content, normalize formatting, and standardize metadata.
+
 Topic Classification: Categorizes articles into predefined topics, utilizing NLP techniques for accurate classification.
 
-Requirements:
+
+𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐦𝐞𝐧𝐭𝐬:
+
 Programming Language: Python 
 
-Libraries:
-requests, BeautifulSoup4, Selenium: For web scraping.
+
+𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬:
+
+requests, BeautifulSoup4: For web scraping.
+
 pandas: For data manipulation and storage.
+
 sklearn (scikit-learn): For NLP-based topic classification.
-nltk or spaCy: For text preprocessing (optional, but useful for advanced NLP).
+
+nltk or spaCy: For text preprocessing.
 
 
-Project Structure
+𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞:
 
 
-├── scraper.py           # Web scraping script for article extraction
+├── Scrapping.py           # Web scraping script for article extraction
 
 ├── data_cleaning.py     # Data cleaning functions
 
@@ -34,7 +43,7 @@ Project Structure
 
 └── requirements.txt     # Required libraries
 
-Usage
+Usage:
 
 1. Web Scraping
 The scraper.py script collects articles by the author across multiple pages of a specified website. It uses BeautifulSoup or Selenium to navigate and extract content.
@@ -58,17 +67,21 @@ Converts articles to a vectorized format using CountVectorizer.
 Applies classification algorithms (e.g., Naive Bayes, SVM) for supervised learning or LDA for unsupervised topic modeling.
 Achieves target classification accuracy and outputs a structured dataset.
 
-Output
+
+𝐎𝐮𝐭𝐩𝐮𝐭:
+
 The final dataset (articles.csv) includes:
 
 Title: Title of the article.
+
 Content: Cleaned article content.
+
 Date: Publication date of the article.
+
 Topic: Classified topic label.
 
-Known Limitations
-Website Structure Changes: The scraper relies on the website’s current HTML structure, which may change.
-Model Accuracy: Topic classification model accuracy may vary based on training data volume and quality.
+𝐊𝐧𝐨𝐰𝐧 𝐋𝐢𝐦𝐢𝐭𝐚𝐭𝐢𝐨𝐧𝐬:
 
-License
-This project is open-source and can be adapted or modified as needed.
+Website Structure Changes: The scraper relies on the website’s current HTML structure, which may change.
+
+Model Accuracy: Topic classification model accuracy may vary based on training data volume and quality.
