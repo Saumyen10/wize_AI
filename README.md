@@ -43,29 +43,17 @@ nltk or spaCy: For text preprocessing.
 
 └── requirements.txt     # Required libraries
 
-Usage:
+𝐔𝐬𝐚𝐠𝐞:
 
 1. Web Scraping
-The scraper.py script collects articles by the author across multiple pages of a specified website. It uses BeautifulSoup or Selenium to navigate and extract content.
+The Scrapping.py script collects all articles for a particular author across multiple pages of a specified website. I have used BeautifulSoup to navigate and extract content.
 
 
 2. Data Cleaning
-The data_cleaning.py script removes unnecessary content like ads, extraneous HTML tags, and unwanted phrases from the scraped articles. It also ensures uniform formatting for fields like Title, Content, and Date.
+The data_cleaning.py script removes unnecessary content like ads, extraneous HTML tags, comments, and irrelevant text from the scraped articles. I have also normalized the text (i.e., 𝐥𝐨𝐰𝐞𝐫𝐜𝐚𝐬𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧, 𝐩𝐮𝐧𝐜𝐭𝐮𝐚𝐭𝐢𝐨𝐧 𝐫𝐞𝐦𝐨𝐯𝐚𝐥).In the end, we have printed out the fields like: 𝐓𝐢𝐭𝐥𝐞, 𝐂𝐨𝐧𝐭𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐃𝐚𝐭𝐞.
 
 3. Topic Classification
-The topic_classification.py script uses NLP techniques to categorize each article. CountVectorizer is used for feature extraction, and Naive Bayes, SVM, or LDA is used for topic classification.
-
-Data Cleaning:
-
-Extracts main article content while removing ads, comments, and irrelevant text.
-Normalizes text (e.g., lowercase conversion, punctuation removal).
-Handles missing or malformed data and ensures structured format (title, date, content).
-
-Topic Classification:
-
-Converts articles to a vectorized format using CountVectorizer.
-Applies classification algorithms (e.g., Naive Bayes, SVM) for supervised learning or LDA for unsupervised topic modeling.
-Achieves target classification accuracy and outputs a structured dataset.
+The topic_classification.py script uses NLP techniques to categorize each article. CountVectorizer is used for feature extraction, and Naive Bayes, SVM used for topic classification. Applies classification algorithms (e.g., Naive Bayes, SVM) for supervised learning or LDA for unsupervised topic modeling. Achieves target classification accuracy and outputs a structured dataset.
 
 
 𝐎𝐮𝐭𝐩𝐮𝐭:
@@ -79,6 +67,7 @@ Content: Cleaned article content.
 Date: Publication date of the article.
 
 Topic: Classified topic label.
+
 
 𝐊𝐧𝐨𝐰𝐧 𝐋𝐢𝐦𝐢𝐭𝐚𝐭𝐢𝐨𝐧𝐬:
 
