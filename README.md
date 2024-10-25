@@ -10,7 +10,7 @@ Data Cleaning: Processes and cleans text to remove irrelevant content, normalize
 Topic Classification: Categorizes articles into predefined topics, utilizing NLP techniques for accurate classification.
 
 Requirements:
-Programming Language: Python 3.x
+Programming Language: Python 
 
 Libraries:
 requests, BeautifulSoup4, Selenium: For web scraping.
@@ -20,16 +20,22 @@ nltk or spaCy: For text preprocessing (optional, but useful for advanced NLP).
 
 
 Project Structure
-plaintext
+
 
 ├── scraper.py           # Web scraping script for article extraction
+
 ├── data_cleaning.py     # Data cleaning functions
+
 ├── topic_classification.py # NLP-based topic classification code
+
 ├── articles.csv         # Output dataset with cleaned and categorized articles
+
 ├── README.md            # Project documentation
+
 └── requirements.txt     # Required libraries
 
 Usage
+
 1. Web Scraping
 The scraper.py script collects articles by the author across multiple pages of a specified website. It uses BeautifulSoup or Selenium to navigate and extract content.
 
