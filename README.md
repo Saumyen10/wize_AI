@@ -47,10 +47,10 @@ The Scrapping.py script collects all articles for a particular author across mul
 
 
 2. Data Cleaning:
-The data_cleaning.py script removes unnecessary content like ads, extraneous HTML tags, comments, and irrelevant text from the scraped articles. I have also normalized the text (i.e., 𝐥𝐨𝐰𝐞𝐫𝐜𝐚𝐬𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧, 𝐩𝐮𝐧𝐜𝐭𝐮𝐚𝐭𝐢𝐨𝐧 𝐫𝐞𝐦𝐨𝐯𝐚𝐥).In the end, we have printed out the fields like: 𝐓𝐢𝐭𝐥𝐞, 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐚𝐧𝐝 𝐃𝐚𝐭𝐞.
+The clean_text() function removes unnecessary content like - leading/trailing spaces, numbers. I have also normalized the text (i.e., 𝐥𝐨𝐰𝐞𝐫𝐜𝐚𝐬𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧, 𝐩𝐮𝐧𝐜𝐭𝐮𝐚𝐭𝐢𝐨𝐧 𝐫𝐞𝐦𝐨𝐯𝐚𝐥).In the end, we have printed out the fields like: 𝐓𝐢𝐭𝐥𝐞, 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐚𝐧𝐝 𝐃𝐚𝐭𝐞.
 
 3. Topic Classification:
-The topic_classification.py script uses NLP techniques to categorize each article. CountVectorizer is used for feature extraction, and Naive Bayes, SVM used for topic classification. Applies classification algorithms (e.g., Naive Bayes, SVM) for supervised learning or LDA for unsupervised topic modeling. Achieves target classification accuracy and outputs a structured dataset.
+The script uses NLP techniques to categorize each article. CountVectorizer is used for feature extraction, and Naive Bayes, SVM used for topic classification.  Achieves target classification accuracy and outputs a structured dataset.
 
 
 𝐎𝐮𝐭𝐩𝐮𝐭:
